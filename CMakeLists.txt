@@ -25,6 +25,8 @@ if (BUILD_TESTING)
   set(TEST_DATA_FILE "${CMAKE_CURRENT_SOURCE_DIR}/resources/test-file.MWF")
 endif() # BUILD_TESTING
 
+find_package(PythonInterp REQUIRED)
+
 # Include pybind11
 add_subdirectory(pybind11)
 
