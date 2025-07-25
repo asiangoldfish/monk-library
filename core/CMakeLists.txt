@@ -8,4 +8,6 @@ target_link_libraries(corelib PUBLIC pybind11::module pybind11::embed) # Link to
 
 target_include_directories(corelib PUBLIC include) # Include the headers
 
-add_subdirectory(tests) # Add the tests
+if(BUILD_TESTING)
+    add_subdirectory(tests) # Add the tests
+endif()
